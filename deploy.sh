@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Create Network
-docker network create trio-task-network
+docker network create trio-task-network2
 
 # Build Images
 docker build -t trio-task-mysql:5.7 db
