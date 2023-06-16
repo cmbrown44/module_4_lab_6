@@ -10,7 +10,7 @@ docker build -t trio-task-flask-app:latest flask-app
 # Run mysql container
 docker run -d \
     --name mysql \
-    --network trio-task-network \
+    --network trio-task-network2 \
     trio-task-mysql:5.7
 
 # Run flask-app container
