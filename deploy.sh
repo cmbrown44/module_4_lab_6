@@ -23,7 +23,7 @@ docker run -d \
 # Run nginx container
 docker run -d \
     --name nginx \
-    -p 80:80 \
+    -p 5000:5000 \
     --network trio-task-network \
     --mount type=bind,source=$(pwd)/nginx/nginx.conf,target=/etc/nginx/nginx.conf \
     nginx:latest
