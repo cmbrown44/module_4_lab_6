@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Create Network
-docker network create trio-task-network2
+docker network create lab6-network
 
 # Build Images
 docker build -t trio-task-mysql:5.7 db
@@ -10,10 +10,10 @@ docker build -t trio-task-flask-app:latest flask-app
 # Run mysql container
 docker run -d \
     --name mysql \
-    --network trio-task-network2 \
+    --network lab6-network \
     trio-task-mysql:5.7
 
-# Run flask-app container
+# Run flask-app containernetwork udp
 docker run -d \
     -e MYSQL_ROOT_PASSWORD=password \
     --name flask-app \
