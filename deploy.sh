@@ -1,4 +1,4 @@
-!#/bin/bash
+!#/bin/sh
 
 # Remove running containers
 docker rm $(docker ps -aq) || true
